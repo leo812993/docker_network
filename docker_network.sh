@@ -30,6 +30,9 @@ wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
 
 lsmod | grep bbr
 
+systemctl stop firewalld.service
+
+systemctl disable firewalld.service 
 
 sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh)"
 
