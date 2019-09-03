@@ -23,6 +23,7 @@ cat /etc/redhat-release
 
 yum install -y  wget
  
+sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh)"
 
 wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 
@@ -31,6 +32,5 @@ wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
 lsmod | grep bbr
 
 
-sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh)"
 
 
